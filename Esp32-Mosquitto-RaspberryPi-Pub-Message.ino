@@ -2,13 +2,13 @@
 #include <WiFi.h>
 #include <PubSubClient.h>
 
-const char* ssid = "wifi ssid";
-const char* password =  "wifi password";
-const char* mqttServer = "mqtt address";
+const char* ssid = "Yahweh_2.4G";
+const char* password =  "f@b100000";
+const char* mqttServer = "192.168.1.183";
 const int mqttPort = 1883;
 const char* topic = "topic/test";
-const char* mqttUser = "mqtt user name;
-const char* mqttPassword = "mqtt password";
+const char* mqttUser = "mrfmach";
+const char* mqttPassword = "mosquitto";
 
 WiFiClient esp32Client;
 PubSubClient client(esp32Client);
@@ -59,7 +59,7 @@ void send_message() {
   Serial.println("Message sent successfully!");
 
   count++;
-  delay(5000);
+  delay(1000);
 }
 
 void loop()
